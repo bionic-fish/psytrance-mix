@@ -1,0 +1,199 @@
+/*  font families 
+        font-family: 'Unica One', cursive; - [captitalized navigation lettering]
+        font-family: 'Bungee Shade', cursive; - [main heading lettering]
+        font-family: 'Poiret One', cursive; - [capitalized content lettering]
+    color scheme
+        rgba(167, 18, 154, 0.424) - app background [top]
+        rgba(43, 185, 241, 0.3) - app background [bottom]
+        rgba(0, 180, 155, 0.6) - section banner background
+        orange - section audio button
+        #fff - text color
+*/
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* app wrapper */
+.app {
+    background-image: linear-gradient(rgba(167, 18, 154, 0.424), rgba(43, 185, 241, 0.3));
+    height: 100vh;
+}
+/* app background */
+body {
+    background-image: url('../img/beach__bk.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+/* app layout [top - bottom] */
+/* app header */
+header.header {
+    color: #fff;
+    font-family: 'Unica One', cursive;
+    letter-spacing: 2px;
+}
+/* app section banner */
+section.banner {
+    background-color: rgba(0, 180, 155, 0.6);
+    color: #fff;
+    padding: 20px 12px;
+}
+section.banner h1 {
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Bungee Shade', cursive;
+}
+section.banner h4 {
+    font-size: 18px;
+    font-family: 'Poiret One', cursive;
+    padding: 10px 0px;
+}
+/* app section audio */
+section.audio {
+    margin: 25px auto;
+}
+section.audio button {
+    background-color: rgb(224, 131, 8);
+    border: 3px solid #fff;
+    border-radius: 10px 10px;
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    padding: 10px;
+
+    transition-duration: 1200ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+section.audio button:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+section.audio button i {
+    padding: 5px;
+}
+
+/* app footer */
+footer.footer {
+    color: #fff;
+    font-family: 'Unica One', cursive;
+    
+}
+
+/* app container props */
+/* app flex props */
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex__item {
+    margin: 10px auto;
+}
+
+
+
+
+@media screen and(min-width: 960px) {
+/* edit media query once mobile view is complete */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* global markup */
+div.app {
+    background-color: rgba(92, 5, 66, 0.4);
+    height: 100vh;
+    
+}
+body {
+    background-image: url('../img/beach__bk.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Unica One', cursive;
+    
+}
+header.header {
+    background: none;
+    /* margin: 10px auto; */
+    color: #fff;
+    /* font-size: 125%; */
+    letter-spacing: 2px;
+}
+div.flex {
+    display: flex;
+    margin: 10px auto;
+    
+    flex-direction: row;
+    /* width: 33.3%; */
+}
+div.flex__item  {
+    flex: 33.3%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 8% auto;
+}
+section.audio button {
+    
+}
+/* section props */
+section {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 150%;
+    
+}
+section.banner {
+    
+    font-family: 'Staatliches', cursive; 
+    display: flex;
+    
+    letter-spacing: 3px;
+    
+    justify-content: center;
+    justify-items: center;
+    
+}
+section.banner h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+
+}
