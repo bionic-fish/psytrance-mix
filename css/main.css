@@ -57,6 +57,10 @@ section.banner h4 {
 section.audio {
     margin: 25px auto;
 }
+section.audio h3 {
+    color: #fff;
+    padding: 12px 0px;
+}
 section.audio button {
     background-color: rgb(224, 131, 8);
     border: 3px solid #fff;
@@ -65,19 +69,23 @@ section.audio button {
     font-family: 'Poiret One', cursive;
     font-size: 20px;
     padding: 10px;
-
+    margin: 10px auto;
+    opacity: 0.6;
     transition-duration: 1200ms;
     transition-property: all;
     transition-timing-function: ease-in-out;
 }
 section.audio button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     text-decoration: underline;
+    opacity: 1;
 }
 section.audio button i {
     padding: 5px;
 }
-
+section.audio audio {
+    background-color:  orange;
+}
 /* app footer */
 footer.footer {
     color: #fff;

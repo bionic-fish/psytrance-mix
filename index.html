@@ -45,7 +45,20 @@
     <!-- mobile & tablet: content center -->
     <!-- desktop: display contents flex -->
     <section class="audio">
-        <button>Listen Now <i class="far fa-play-circle"></i></button>
+        <h3>This Month's Set</h3>
+
+        <button onclick="playAudio()" type="button">
+            Play<i class="far fa-play-circle"></i>
+        </button>
+
+        <button onclick="pauseAudio()" type="button">
+            Pause<i class="far fa-pause-circle"></i>
+        </button>
+        <!-- audio file -->
+        <audio id="audioplayer">
+            <source src="audio/LiveSunsetMix.wav">
+        </audio>
+        
     </section>
 
 <!-- footer section -->
@@ -69,6 +82,7 @@
 </div><!-- div.app ends here -->
 
 <!-- scripts -->
+<script src="js/app.js"></script>
 
 </body>
 </html>
