@@ -41,15 +41,15 @@ header.header {
 section.banner {
     background-color: rgba(0, 180, 155, 0.6);
     color: #fff;
-    padding: 20px 12px;
+    padding: 10px 12px;
 }
 section.banner h1 {
-    font-size: 30px;
+    font-size: 22px;
     padding: 5px;
     font-family: 'Bungee Shade', cursive;
 }
 section.banner h4 {
-    font-size: 18px;
+    font-size: 12px;
     font-family: 'Poiret One', cursive;
     padding: 10px 0px;
 }
@@ -90,7 +90,25 @@ section.audio audio {
 footer.footer {
     color: #fff;
     font-family: 'Unica One', cursive;
+    /* margin-bottom: 10px; */
     
+}
+footer.footer a {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    transition-duration: 700ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    
+    
+}
+footer.footer a:hover {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-shadow: 2px 1px #fff;
 }
 
 /* app container props */
@@ -103,105 +121,73 @@ footer.footer {
 }
 .flex__item {
     margin: 10px auto;
+    padding: 0px;
+}
+
+/* soundcloud iframe */
+iframe {
+    height: 55px;
+    max-height: 100px;
+    width: 100%;
+    max-width: 500px;
+}
+
+iframe span {
+    visibility: hidden;
+    display: none;
 }
 
 
-
-
-@media screen and(min-width: 960px) {
+@media screen and (min-width: 960px) {
 /* edit media query once mobile view is complete */
+    header.header {
+        height: 15vh;
+    }
+    section.banner {
+        align-items: center;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+    }
+    section.audio {
+        height: 35vh;
+    }
+    .flex {
+        flex-direction: row;
+        padding: 25px 0px;
+    }
+    iframe {
+        height: 100px;
+        height: 100px;
+        width: 500px;
+        max-width: 550px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* global markup */
-div.app {
-    background-color: rgba(92, 5, 66, 0.4);
-    height: 100vh;
-    
-}
-body {
-    background-image: url('../img/beach__bk.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
-    font-family: 'Unica One', cursive;
-    
-}
-header.header {
-    background: none;
-    /* margin: 10px auto; */
-    color: #fff;
-    /* font-size: 125%; */
-    letter-spacing: 2px;
-}
-div.flex {
-    display: flex;
-    margin: 10px auto;
-    
-    flex-direction: row;
-    /* width: 33.3%; */
-}
-div.flex__item  {
-    flex: 33.3%;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    margin: 8% auto;
-}
-section.audio button {
-    
-}
-/* section props */
-section {
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    font-size: 150%;
-    
-}
-section.banner {
-    
-    font-family: 'Staatliches', cursive; 
-    display: flex;
-    
-    letter-spacing: 3px;
-    
-    justify-content: center;
-    justify-items: center;
-    
-}
-section.banner h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 55px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
